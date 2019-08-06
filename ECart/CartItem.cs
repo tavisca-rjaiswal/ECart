@@ -3,13 +3,13 @@
     class CartItem
     {
         Product item;
-        int Quantity;
-        public double totalCost;
-        public CartItem(Product item, int Quantity)
+        int quantity;
+        public double TotalCost;
+        public CartItem(Product item, int quantity)
         {
             this.item = item;
-            this.Quantity = Quantity;
-            totalCost = this.item.Price * this.Quantity;
+            this.quantity = quantity;
+            TotalCost = this.item.Price * this.quantity;
         }
     }
 }

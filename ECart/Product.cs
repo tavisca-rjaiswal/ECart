@@ -2,12 +2,12 @@
 {
     class Product
     {
-        string Name;
+        string name;
         public double Price;
-        public Product(string Name, double Price)
+        public Product(string name, double price)
         {
-            this.Name = Name;
-            this.Price = Price;
+            this.name = name;
+            this.Price = price;
         }
     }
 }
