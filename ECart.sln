@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECart", "ECart\ECart.csproj", "{38E04155-F6D2-4A19-9EC3-2FF275689DDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECartTest", "ECartTest\ECartTest.csproj", "{C50F92B4-2B79-4CE5-9999-0B897A7B3CA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{38E04155-F6D2-4A19-9EC3-2FF275689DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38E04155-F6D2-4A19-9EC3-2FF275689DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E04155-F6D2-4A19-9EC3-2FF275689DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50F92B4-2B79-4CE5-9999-0B897A7B3CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50F92B4-2B79-4CE5-9999-0B897A7B3CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50F92B4-2B79-4CE5-9999-0B897A7B3CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50F92B4-2B79-4CE5-9999-0B897A7B3CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
