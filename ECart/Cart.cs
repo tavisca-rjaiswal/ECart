@@ -2,37 +2,37 @@
 
 namespace ECart
 {
-    class Cart
+    public class Cart
     {
-        List<CartItem> ItemList;
-        double cartTotal = 0, totalDiscount = 0, discountedTotal = 0;
+        List<CartItem> itemList;
+        double totalCartPrice = 0, totalDiscount = 0, totalDiscountedPrice = 0;
         double discountPercentage;
         public Cart()
         {
-            ItemList = new List<CartItem>();
+            itemList = new List<CartItem>();
         }
         public void DiscountOnTotal(double discountPercentage = 25)
         {
             this.discountPercentage = discountPercentage;
         }
-        public double GetTotal()
+        public double GetTotalCartPrice()
         {
-            ItemList.ForEach(item => cartTotal += item.TotalCost);
-            return cartTotal;
+            itemList.ForEach(item => totalCartPrice += item.TotalDiscountedPrice);
+            return totalCartPrice;
         }
         public double GetTotalDiscount()
         {
-            totalDiscount = cartTotal * (discountPercentage / 100);
+            totalDiscount = totalCartPrice * (discountPercentage / 100);
             return totalDiscount;
         }
-        public double GetDiscountedTotal()
+        public double GetTotalDiscountedPrice()
         {
-            discountedTotal = cartTotal - totalDiscount;
-            return discountedTotal;
+            totalDiscountedPrice = totalCartPrice - totalDiscount;
+            return totalDiscountedPrice;
         }
         public void AddToCart(CartItem item)
         {
-            ItemList.Add(item);
+            itemList.Add(item);
         }
     }
 }

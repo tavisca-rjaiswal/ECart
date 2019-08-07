@@ -5786,11 +5786,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\ECartTest.csproj",
+      "projectUniqueName": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\ECartTest.csproj",
       "projectName": "ECartTest",
-      "projectPath": "c:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\ECartTest.csproj",
+      "projectPath": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\ECartTest.csproj",
       "packagesPath": "C:\\Users\\rjaiswal\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\obj\\",
+      "outputPath": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECartTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5809,8 +5809,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "c:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj": {
-              "projectPath": "c:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj"
+            "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj": {
+              "projectPath": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj"
             }
           }
         }

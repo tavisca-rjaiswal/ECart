@@ -1,13 +1,21 @@
 ﻿namespace ECart
 {
-    class Product
+    public class Product
     {
         string name;
-        public double Price;
-        public Product(string name, double price)
+        public double MarkedPrice, Discount = 0, DiscountedPrice;
+        ICategory category;
+        public Product(string name, double markedPrice,ICategory category)
         {
             this.name = name;
-            this.Price = price;
+            MarkedPrice = markedPrice;
+            this.category = category;
+            CalculateDiscountedPrice();
+        }
+        public void CalculateDiscountedPrice()
+        {
+            Discount = MarkedPrice * (category.DiscountPercentage / 100);
+            DiscountedPrice = MarkedPrice - Discount;
         }
     }
 }

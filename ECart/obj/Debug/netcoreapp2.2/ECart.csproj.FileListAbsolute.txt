@@ -1,0 +1,11 @@
+C:\Users\rjaiswal\source\repos\ECart\ECart\bin\Debug\netcoreapp2.2\ECart.deps.json
+C:\Users\rjaiswal\source\repos\ECart\ECart\bin\Debug\netcoreapp2.2\ECart.runtimeconfig.json
+C:\Users\rjaiswal\source\repos\ECart\ECart\bin\Debug\netcoreapp2.2\ECart.runtimeconfig.dev.json
+C:\Users\rjaiswal\source\repos\ECart\ECart\bin\Debug\netcoreapp2.2\ECart.dll
+C:\Users\rjaiswal\source\repos\ECart\ECart\bin\Debug\netcoreapp2.2\ECart.pdb
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.csproj.CoreCompileInputs.cache
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.AssemblyInfoInputs.cache
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.AssemblyInfo.cs
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.dll
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.pdb
+C:\Users\rjaiswal\source\repos\ECart\ECart\obj\Debug\netcoreapp2.2\ECart.csprojResolveAssemblyReference.cache
