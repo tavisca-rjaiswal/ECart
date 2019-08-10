@@ -695,11 +695,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj",
+      "projectUniqueName": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj",
       "projectName": "ECart",
-      "projectPath": "c:\\users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj",
+      "projectPath": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\ECart.csproj",
       "packagesPath": "C:\\Users\\rjaiswal\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\rjaiswal\\source\\repos\\ECart\\ECart\\obj\\",
+      "outputPath": "C:\\Users\\rjaiswal\\source\\repos\\ECart\\ECart\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
