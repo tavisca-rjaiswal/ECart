@@ -6,9 +6,13 @@ namespace ECart
 {
     public class ConfigureDiscount
     {
-        public void SetDiscount(ICategory category,double discountPercentage)
+        public void SetCategoryDiscount(ICategory category,double discountPercentage)
         {
             category.DiscountPercentage = discountPercentage;
+        }
+        public void SetConfigDiscount(double discountPercentage=0)
+        {
+            AppConfig.discountPercentage=discountPercentage;
         }
     }
 }

@@ -11,9 +11,11 @@ namespace ECart
             Dairy dairy = new Dairy();
             Electronics electronics = new Electronics();
 
-            configureDiscount.SetDiscount(clothing, 20);
-            configureDiscount.SetDiscount(dairy,10);
-            configureDiscount.SetDiscount(electronics,15);
+            configureDiscount.SetCategoryDiscount(clothing, 20);
+            configureDiscount.SetCategoryDiscount(dairy,10);
+            configureDiscount.SetCategoryDiscount(electronics,15);
+
+            configureDiscount.SetConfigDiscount(15);
 
             Product ajio = new Product("Ajio Shirt", 500, clothing);
             Product butter = new Product("Amul", 200, dairy);
@@ -21,18 +23,15 @@ namespace ECart
             CartItem ajioItem = new CartItem(ajio, 5);
             CartItem butterItem = new CartItem(butter, 3);
 
-            Cart cart = new Cart();
+            Cart cart = new Cart("CONFIG");
             cart.AddToCart(ajioItem);
             cart.AddToCart(butterItem);
+//            cart.DiscountOnTotal(10);
 
-            cart.DiscountOnTotal(10);
+            cart.CalculateCartLevelTotal();
+            double actualOutput = cart.GetTotalDiscount();
 
-            cart.GetTotalCartPrice();
-            cart.GetTotalDiscount();
-            cart.GetTotalDiscountedPrice();
-
-            double expectedOutput = 2100;
-
+            Console.WriteLine(actualOutput);
             Console.ReadLine();
         }
     }

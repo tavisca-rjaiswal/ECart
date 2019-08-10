@@ -12,15 +12,16 @@ namespace ECartTest
         Electronics electronics = new Electronics();
         public CartTest()
         {
-            configureDiscount.SetDiscount(clothing, 20);
-            configureDiscount.SetDiscount(dairy, 10);
-            configureDiscount.SetDiscount(electronics, 15);
+            configureDiscount.SetCategoryDiscount(clothing, 20);
+            configureDiscount.SetCategoryDiscount(dairy, 10);
+            configureDiscount.SetCategoryDiscount(electronics, 15);
+            configureDiscount.SetConfigDiscount(15);
         }
 
         [Fact]
         public void GetTotalCartPrice_Should_Return_Zero_For_Empty_Cart()
         {
-            Cart cart = new Cart();
+            Cart cart = new Cart("CONFIG");
             double actualOutput = cart.GetTotalCartPrice();
             double expectedOutput = 0;
             Assert.Equal(expectedOutput, actualOutput);
@@ -28,7 +29,7 @@ namespace ECartTest
         [Fact]
         public void GetTotalDiscount_Should_Return_Zero_For_Empty_Cart()
         {
-            Cart cart = new Cart();
+            Cart cart = new Cart("CONFIG");
             double actualOutput = cart.GetTotalDiscount();
             double expectedOutput = 0;
             Assert.Equal(expectedOutput, actualOutput);
@@ -36,7 +37,7 @@ namespace ECartTest
         [Fact]
         public void GetTotalDiscountedPrice_Should_Return_Zero_For_Empty_Cart()
         {
-            Cart cart = new Cart();
+            Cart cart = new Cart("CONFIG");
             double actualOutput = cart.GetTotalDiscountedPrice();
             double expectedOutput = 0;
             Assert.Equal(expectedOutput, actualOutput);
@@ -50,13 +51,14 @@ namespace ECartTest
             CartItem ajioItem = new CartItem(ajio, 5);
             CartItem butterItem = new CartItem(butter, 3);
 
-            Cart cart = new Cart();
+            Cart cart = new Cart("FIXED");
             cart.AddToCart(ajioItem);
             cart.AddToCart(butterItem);
             cart.DiscountOnTotal(10);
 
+            cart.CalculateCartLevelTotal();
             double actualOutput = cart.GetTotalCartPrice();
-            double expectedOutput = 2540;
+            double expectedOutput = 3100;
             Assert.Equal(expectedOutput, actualOutput);
         }
         [Fact]
@@ -68,14 +70,14 @@ namespace ECartTest
             CartItem ajioItem = new CartItem(ajio, 5);
             CartItem butterItem = new CartItem(butter, 3);
 
-            Cart cart = new Cart();
+            Cart cart = new Cart("CONFIG");
             cart.AddToCart(ajioItem);
             cart.AddToCart(butterItem);
-            cart.DiscountOnTotal(10);
+            //            cart.DiscountOnTotal(10);
 
-            cart.GetTotalCartPrice();
+            cart.CalculateCartLevelTotal();
             double actualOutput = cart.GetTotalDiscount();
-            double expectedOutput = 254;
+            double expectedOutput = 465;
             Assert.Equal(expectedOutput, actualOutput);
         }
         [Fact]
@@ -87,15 +89,14 @@ namespace ECartTest
             CartItem ajioItem = new CartItem(ajio, 5);
             CartItem butterItem = new CartItem(butter, 3);
 
-            Cart cart = new Cart();
+            Cart cart = new Cart("CATEGORY");
             cart.AddToCart(ajioItem);
             cart.AddToCart(butterItem);
-            cart.DiscountOnTotal(10);
+            //            cart.DiscountOnTotal(10);
 
-            cart.GetTotalCartPrice();
-            cart.GetTotalDiscount();
+            cart.CalculateCategoryLevelTotal();
             double actualOutput = cart.GetTotalDiscountedPrice();
-            double expectedOutput = 2286;
+            double expectedOutput = 2540;
             Assert.Equal(expectedOutput, actualOutput);
         }
     }
